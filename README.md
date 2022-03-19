@@ -11,6 +11,10 @@ git clone https://github.com/lightningdevkit/ldk-sample
 cd ldk-sample
 cargo run <bitcoind-rpc-username>:<bitcoind-rpc-password>@<bitcoind-rpc-host>:<bitcoind-rpc-port> <ldk_storage_directory_path> [<ldk-peer-listening-port>] [bitcoin-network] [announced-listen-addr announced-node-name]
 ```
+
+### polar startup command
+cargo run polaruser:polarpass@127.0.0.1:18443 ./ 8889 regtest
+
 `bitcoind`'s RPC username and password likely can be found through `cat ~/.bitcoin/.cookie`.
 
 `bitcoin-network`: defaults to `testnet`. Options: `testnet`, `regtest`, and `signet`.
